@@ -7,7 +7,7 @@
     "font": "sans"
   },
   "profile": {
-    "name": "Mohamed Amr Mohamed Abdelzaher",
+    "name": "Mohamed Amr Mohamed Abdelzaher TEST",
     "name_ar": "محمد عمرو محمد عبدالظاهر",
     "title": "Data Analyst & Business Intelligence",
     "title_ar": "محلل بيانات وذكاء أعمال",
@@ -50,16 +50,22 @@
         {
           "name": "Exploratory Data Analysis (EDA)",
           "name_ar": "التحليل الاستكشافي للبيانات (EDA)",
+          "detail": "",
+          "detail_ar": "",
           "level": "core"
         },
         {
           "name": "Data Cleaning",
           "name_ar": "تنظيف البيانات",
+          "detail": "",
+          "detail_ar": "",
           "level": "core"
         },
         {
           "name": "Sales & Customer Analysis",
           "name_ar": "تحليل المبيعات وشرائح العملاء",
+          "detail": "",
+          "detail_ar": "",
           "level": "working"
         }
       ]
@@ -137,6 +143,8 @@
         {
           "name": "KPI Reporting",
           "name_ar": "تقارير مؤشرات الأداء (KPI)",
+          "detail": "",
+          "detail_ar": "",
           "level": "core"
         },
         {
@@ -153,28 +161,28 @@
     {
       "slug": "marketing-analytics",
       "title": "Marketing Analytics Dashboard",
+      "title_ar": "لوحة تحليلات التسويق",
       "tools": "Power BI",
       "visible": true,
       "image": "uploads/marketing-dashboard.png",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/marketing-analytics-dashboard",
+      "problem": [
+        "Customer data had errors and missing values, and it was hard to see purchasing patterns and customer segments."
+      ],
+      "problem_ar": [
+        "بيانات العملاء فيها أخطاء وقيم مفقودة، وكان من الصعب رؤية أنماط الشراء وشرائح العملاء."
+      ],
       "steps": [
         "Cleaned errors and missing values",
         "Built table relationships",
         "Wrote DAX measures for customer spending and purchasing patterns",
         "Designed an interactive dashboard of customer profiles and purchases by channel"
       ],
-      "title_ar": "لوحة تحليلات التسويق",
       "steps_ar": [
         "تنظيف الأخطاء والقيم المفقودة",
         "بناء العلاقات بين الجداول",
         "كتابة مقاييس DAX لإنفاق العملاء وأنماط الشراء",
         "تصميم داشبورد تفاعلي لملفات العملاء والمشتريات حسب القناة"
-      ],
-      "problem": [
-        "Customer data had errors and missing values, and it was hard to see purchasing patterns and customer segments."
-      ],
-      "problem_ar": [
-        "بيانات العملاء فيها أخطاء وقيم مفقودة، وكان من الصعب رؤية أنماط الشراء وشرائح العملاء."
       ],
       "results": [
         "Spain had the highest total customer spending in the dataset.",
@@ -190,24 +198,24 @@
     {
       "slug": "sales-performance",
       "title": "Sales Performance Dashboard",
+      "title_ar": "لوحة أداء المبيعات",
       "tools": "Microsoft Excel",
       "visible": true,
       "image": "uploads/excel-sales-dashboard.jpg",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/sales-performance-dashboard",
-      "steps": [
-        "Built with Pivot Tables, Pivot Charts, Slicers and a Timeline",
-        "Analyzed sales by date, region and product"
-      ],
-      "title_ar": "لوحة أداء المبيعات",
-      "steps_ar": [
-        "بناء اللوحة باستخدام الجداول المحورية والرسوم المحورية وSlicers وTimeline",
-        "تحليل المبيعات حسب التاريخ والمنطقة والمنتج"
-      ],
       "problem": [
         "Raw sales data needed to become clear, actionable business insight, with the ability to filter by date, region and product."
       ],
       "problem_ar": [
         "بيانات المبيعات الخام كانت تحتاج أن تتحول إلى رؤى واضحة وقابلة للتنفيذ، مع إمكانية التصفية حسب التاريخ والمنطقة والمنتج."
+      ],
+      "steps": [
+        "Built with Pivot Tables, Pivot Charts, Slicers and a Timeline",
+        "Analyzed sales by date, region and product"
+      ],
+      "steps_ar": [
+        "بناء اللوحة باستخدام الجداول المحورية والرسوم المحورية وSlicers وTimeline",
+        "تحليل المبيعات حسب التاريخ والمنطقة والمنتج"
       ],
       "results": [
         "South recorded the highest sales, about 1.24M.",
@@ -225,26 +233,26 @@
     {
       "slug": "superstore-sales",
       "title": "Superstore Sales Dashboard",
+      "title_ar": "لوحة مبيعات Superstore",
       "tools": "Microsoft Excel",
       "visible": true,
       "image": "uploads/superstore-dashboard.jpg",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/superstore-sales-dashboard",
-      "steps": [
-        "Cleaned and transformed the data with Power Query",
-        "Analyzed sales and profitability with Pivot Tables",
-        "Created KPI cards, charts and interactive filters for regional sales, category profitability, monthly trends and customer segments"
-      ],
-      "title_ar": "لوحة مبيعات Superstore",
-      "steps_ar": [
-        "تنظيف البيانات وتحويلها باستخدام Power Query",
-        "تحليل المبيعات والربحية بالجداول المحورية",
-        "إنشاء بطاقات KPI ورسوم ومرشحات تفاعلية للمبيعات الإقليمية وربحية الفئات والاتجاهات الشهرية وشرائح العملاء"
-      ],
       "problem": [
         "The Superstore sales data had to be prepared and turned into a clear view of the main indicators: sales, profit, regions, categories and customer segments."
       ],
       "problem_ar": [
         "كان لازم تجهيز بيانات مبيعات Superstore وتحويلها إلى عرض واضح للمؤشرات الأساسية: المبيعات والأرباح والمناطق والفئات وشرائح العملاء."
+      ],
+      "steps": [
+        "Cleaned and transformed the data with Power Query",
+        "Analyzed sales and profitability with Pivot Tables",
+        "Created KPI cards, charts and interactive filters for regional sales, category profitability, monthly trends and customer segments"
+      ],
+      "steps_ar": [
+        "تنظيف البيانات وتحويلها باستخدام Power Query",
+        "تحليل المبيعات والربحية بالجداول المحورية",
+        "إنشاء بطاقات KPI ورسوم ومرشحات تفاعلية للمبيعات الإقليمية وربحية الفئات والاتجاهات الشهرية وشرائح العملاء"
       ],
       "results": [
         "The dashboard shows total sales of $2,292,739 and total profit of $598,250.85, with West as the top region ($725,458).",
@@ -258,24 +266,24 @@
     {
       "slug": "pharmacy-sales",
       "title": "Pharmacy Sales Dashboard",
+      "title_ar": "لوحة مبيعات الصيدلية",
       "tools": "Power BI, Power Query",
       "visible": true,
       "image": "uploads/pharmacy-dashboard.jpg",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/pharmacy-sales-dashboard",
-      "steps": [
-        "Transformed the sales data with Power Query",
-        "Built table relationships and an interactive dashboard of sales, revenue trends, categories and regional performance"
-      ],
-      "title_ar": "لوحة مبيعات الصيدلية",
-      "steps_ar": [
-        "تحويل بيانات المبيعات باستخدام Power Query",
-        "بناء العلاقات بين الجداول وداشبورد تفاعلي للمبيعات واتجاهات الإيرادات والفئات والأداء الإقليمي"
-      ],
       "problem": [
         "Pharmacy sales data needed to be analyzed to support better business decisions."
       ],
       "problem_ar": [
         "كانت بيانات مبيعات الصيدلية تحتاج إلى تحليل لدعم قرارات أفضل للعمل."
+      ],
+      "steps": [
+        "Transformed the sales data with Power Query",
+        "Built table relationships and an interactive dashboard of sales, revenue trends, categories and regional performance"
+      ],
+      "steps_ar": [
+        "تحويل بيانات المبيعات باستخدام Power Query",
+        "بناء العلاقات بين الجداول وداشبورد تفاعلي للمبيعات واتجاهات الإيرادات والفئات والأداء الإقليمي"
       ],
       "results": [
         "The dashboard gives insight into sales performance, revenue trends, top products, customer and branch analysis, and KPIs."
@@ -287,28 +295,28 @@
     {
       "slug": "country-development",
       "title": "Country Development & Economic Performance (DEPI Assignment 3)",
+      "title_ar": "التنمية الاقتصادية وأداء الدول (تكليف DEPI رقم 3)",
       "tools": "Power BI, Power Query, DAX",
       "visible": true,
       "image": "uploads/depi-dashboard.png",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/country-development-economic-performance",
+      "problem": [
+        "How do economic performance, health and population indicators connect across countries?"
+      ],
+      "problem_ar": [
+        "كيف ترتبط مؤشرات الأداء الاقتصادي والصحة والسكان بين الدول؟"
+      ],
       "steps": [
         "Prepared the data with Power Query",
         "Built the data model and DAX measures",
         "Designed three interactive pages: Executive Overview, Health & Population, Economic Performance",
         "Added interactive filters, conditional formatting and page navigation"
       ],
-      "title_ar": "التنمية الاقتصادية وأداء الدول (تكليف DEPI رقم 3)",
       "steps_ar": [
         "إعداد البيانات باستخدام Power Query",
         "بناء نموذج البيانات ومقاييس DAX",
         "تصميم ثلاث صفحات تفاعلية: نظرة عامة تنفيذية، الصحة والسكان، الأداء الاقتصادي",
         "إضافة مرشحات تفاعلية وتنسيق شرطي وتنقل بين الصفحات"
-      ],
-      "problem": [
-        "How do economic performance, health and population indicators connect across countries?"
-      ],
-      "problem_ar": [
-        "كيف ترتبط مؤشرات الأداء الاقتصادي والصحة والسكان بين الدول؟"
       ],
       "results": [
         "Biggest takeaway: meaningful analysis starts with getting the calculations right.",
@@ -324,26 +332,26 @@
     {
       "slug": "bakery-sales",
       "title": "Artisan Loaf Bakery Sales Dashboard",
+      "title_ar": "لوحة مبيعات مخبز Artisan Loaf",
       "tools": "Microsoft Excel, Power BI",
       "visible": true,
       "image": "uploads/bakery-dashboard.png",
       "link": "https://github.com/MohamedAmr2015/data-analysis-projects/tree/main/bakery-sales-dashboard",
-      "steps": [
-        "Cleaned the 2,000 sales records: converted dates to Excel dates and sorted the rows, without changing sales or deleting rows",
-        "Built summary tables and an Excel dashboard with date and category filters",
-        "Built a one-page Power BI report with cards, line, pie and column charts and slicers for Category, Channel, Season and Year"
-      ],
-      "title_ar": "لوحة مبيعات مخبز Artisan Loaf",
-      "steps_ar": [
-        "تنظيف 2,000 سجل مبيعات: تحويل التواريخ إلى صيغة Excel وترتيب الصفوف دون تغيير المبيعات أو حذف أي صفوف",
-        "بناء جداول تلخيصية وداشبورد Excel بمرشحات للتاريخ والفئة",
-        "بناء تقرير Power BI من صفحة واحدة ببطاقات ورسوم خطية ودائرية وعمودية وSlicers للفئة والقناة والموسم والسنة"
-      ],
       "problem": [
         "Analyze 2024 bakery sales by month, weekday, product, category and channel."
       ],
       "problem_ar": [
         "تحليل مبيعات المخبز في 2024 حسب الشهر ويوم الأسبوع والمنتج والفئة وقناة البيع."
+      ],
+      "steps": [
+        "Cleaned the 2,000 sales records: converted dates to Excel dates and sorted the rows, without changing sales or deleting rows",
+        "Built summary tables and an Excel dashboard with date and category filters",
+        "Built a one-page Power BI report with cards, line, pie and column charts and slicers for Category, Channel, Season and Year"
+      ],
+      "steps_ar": [
+        "تنظيف 2,000 سجل مبيعات: تحويل التواريخ إلى صيغة Excel وترتيب الصفوف دون تغيير المبيعات أو حذف أي صفوف",
+        "بناء جداول تلخيصية وداشبورد Excel بمرشحات للتاريخ والفئة",
+        "بناء تقرير Power BI من صفحة واحدة ببطاقات ورسوم خطية ودائرية وعمودية وSlicers للفئة والقناة والموسم والسنة"
       ],
       "results": [
         "Total units sold: 40,222.",
@@ -397,22 +405,22 @@
     {
       "kind": "teaching",
       "role": "AI Instructor (current)",
-      "detail": "Teaches AI at an academy.",
       "role_ar": "مدرّس ذكاء اصطناعي (حاليًا)",
+      "detail": "Teaches AI at an academy.",
       "detail_ar": "يدرّس الذكاء الاصطناعي في أكاديمية."
     },
     {
       "kind": "teaching",
       "role": "Programming Teacher (current)",
-      "detail": "Teaches programming to secondary school baccalaureate students. Teaching builds the habit of explaining technical ideas clearly, which supports presenting data findings.",
       "role_ar": "مدرّس برمجة (حاليًا)",
+      "detail": "Teaches programming to secondary school baccalaureate students. Teaching builds the habit of explaining technical ideas clearly, which supports presenting data findings.",
       "detail_ar": "يدرّس البرمجة لطلاب الثانوية العامة (البكالوريا). التدريس ينمّي عادة شرح الأفكار التقنية بوضوح، وهذا يدعم عرض نتائج البيانات."
     },
     {
       "kind": "work",
       "role": "Customer Service Representative",
-      "detail": "Vodafone Egypt. Resolved service issues and met performance targets. Practiced explaining solutions clearly to customers with different needs.",
       "role_ar": "ممثل خدمة عملاء",
+      "detail": "Vodafone Egypt. Resolved service issues and met performance targets. Practiced explaining solutions clearly to customers with different needs.",
       "detail_ar": "فودافون مصر. حلّ مشكلات الخدمة وتحقيق مستهدفات الأداء. تدرّب على شرح الحلول بوضوح لعملاء باحتياجات مختلفة.",
       "period": "Dec 2025 – Jul 2026",
       "period_ar": "ديسمبر 2025 – يوليو 2026"
@@ -420,22 +428,22 @@
     {
       "kind": "work",
       "role": "Sales Representative",
-      "detail": "Al Waleed Real Estate. Matched customer needs to property options. Practiced understanding client requirements and negotiating, which carries over to business-focused analysis.",
       "role_ar": "مندوب مبيعات",
+      "detail": "Al Waleed Real Estate. Matched customer needs to property options. Practiced understanding client requirements and negotiating, which carries over to business-focused analysis.",
       "detail_ar": "الوليد للعقارات. مطابقة احتياجات العملاء مع الخيارات العقارية. تدرّب على فهم متطلبات العميل والتفاوض، وهذا يفيد في التحليل الموجّه للأعمال."
     },
     {
       "kind": "training",
       "role": "Data Analytics Summer Training",
-      "detail": "NTI / ITIDA. 120 hours: 90 technical and 30 freelancing, applying Excel to cleaning, analysis and reporting.",
       "role_ar": "تدريب صيفي في تحليل البيانات",
+      "detail": "NTI / ITIDA. 120 hours: 90 technical and 30 freelancing, applying Excel to cleaning, analysis and reporting.",
       "detail_ar": "NTI / ITIDA. 120 ساعة: 90 ساعة تقنية و30 ساعة عمل حر، مع تطبيق Excel في التنظيف والتحليل والتقارير."
     },
     {
       "kind": "education",
       "role": "B.Sc. Computers and Artificial Intelligence",
-      "detail": "Beni-Suef University, 2026.",
       "role_ar": "بكالوريوس الحاسبات والذكاء الاصطناعي",
+      "detail": "Beni-Suef University, 2026.",
       "detail_ar": "جامعة بني سويف، 2026."
     }
   ],
@@ -443,36 +451,36 @@
     {
       "kind": "course",
       "role": "Digital Egypt Pioneers Initiative (DEPI), data analytics track",
-      "detail": "Learning journey in data analytics with assignments such as the Marketing, Superstore and Country Development dashboards. Submitted tasks were approved.",
       "role_ar": "مبادرة رواد مصر الرقمية (DEPI)، مسار تحليل البيانات",
+      "detail": "Learning journey in data analytics with assignments such as the Marketing, Superstore and Country Development dashboards. Submitted tasks were approved.",
       "detail_ar": "رحلة تعلم في تحليل البيانات مع تكليفات مثل داشبوردات التسويق وSuperstore وتنمية الدول. تم قبول المهام المسلّمة."
     },
     {
       "kind": "course",
       "role": "NTI Summer Training, Data Analytics module",
-      "detail": "Excel, Power BI, SQL and Python. Completed with a score of 79.5%.",
       "role_ar": "تدريب NTI الصيفي، وحدة تحليل البيانات",
+      "detail": "Excel, Power BI, SQL and Python. Completed with a score of 79.5%.",
       "detail_ar": "Excel وPower BI وSQL وPython. أنهاه بدرجة 79.5%."
     },
     {
       "kind": "course",
       "role": "Data Analysis: Skills for the Freelance Professional, NTI",
-      "detail": "Digital Egypt Youth Program. 120 hours: 90 technical hours in data analysis and 30 hours of freelancing training and coaching.",
       "role_ar": "تحليل البيانات: مهارات المستقل (Freelance Professional)، NTI",
+      "detail": "Digital Egypt Youth Program. 120 hours: 90 technical hours in data analysis and 30 hours of freelancing training and coaching.",
       "detail_ar": "برنامج شباب مصر الرقمية. 120 ساعة: 90 ساعة تقنية في تحليل البيانات و30 ساعة تدريب وإرشاد على العمل الحر."
     },
     {
       "kind": "course",
       "role": "Programming Foundations, Level 1",
-      "detail": "ProgrammingAdvices. Core programming concepts.",
       "role_ar": "أساسيات البرمجة، المستوى الأول",
+      "detail": "ProgrammingAdvices. Core programming concepts.",
       "detail_ar": "ProgrammingAdvices. مفاهيم البرمجة الأساسية."
     },
     {
       "kind": "course",
       "role": "C++ course",
-      "detail": "Programming fundamentals, logical structures and efficient data handling.",
       "role_ar": "كورس C++",
+      "detail": "Programming fundamentals, logical structures and efficient data handling.",
       "detail_ar": "أساسيات البرمجة والهياكل المنطقية والتعامل الفعّال مع البيانات."
     }
   ],
