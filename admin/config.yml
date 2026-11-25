@@ -79,12 +79,12 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: Title (Arabic), name: title_ar, widget: string, required: false }
               - { label: Tools, name: tools, widget: string }
-              - { label: Show this project, name: visible, widget: boolean, default: true }
+              - { label: Publish this project, name: visible, widget: boolean, default: false, hint: "New projects stay hidden until you turn this on. Turn it on when the project is ready to appear on your site." }
               - { label: Dashboard screenshot, name: image, widget: image, required: false }
               - { label: Link to the project, name: link, widget: string, required: false }
               - { label: The problem, name: problem, widget: list, required: false, field: { label: Problem, name: item, widget: string } }
               - { label: The problem (Arabic), name: problem_ar, widget: list, required: false, field: { label: Problem, name: item, widget: string } }
-              - { label: What you did, name: steps, widget: list, field: { label: Step, name: step, widget: string } }
+              - { label: What you did, name: steps, widget: list, required: false, hint: "Add 2 or 3 short steps describing what you did.", field: { label: Step, name: step, widget: string } }
               - { label: What you did (Arabic), name: steps_ar, widget: list, required: false, field: { label: Step, name: step, widget: string } }
               - { label: Results, name: results, widget: list, required: false, field: { label: Result, name: item, widget: string } }
               - { label: Results (Arabic), name: results_ar, widget: list, required: false, field: { label: Result, name: item, widget: string } }
