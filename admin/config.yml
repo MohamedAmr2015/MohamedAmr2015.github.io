@@ -1,0 +1,130 @@
+# Sveltia CMS. Production: set repo (owner/repo) and base_url (the sveltia-cms-auth Worker URL, GitHub App login) after approval and setup.
+# Without base_url the login screen offers 'Sign In Using Access Token' (fine-grained single-repo token) instead.
+backend:
+  name: github
+  repo: OWNER/REPO
+  branch: main
+  base_url: https://YOUR-WORKER.workers.dev
+local_backend: true
+media_folder: uploads
+public_folder: /uploads
+collections:
+  - name: portfolio
+    label: Portfolio
+    files:
+      - name: site
+        label: Whole site
+        file: content/site.json
+        fields:
+          - label: Colors and look
+            name: theme
+            widget: object
+            fields:
+              - { label: Accent color, name: accent, widget: color }
+              - { label: Background color, name: background, widget: color }
+              - { label: Text color, name: text, widget: color }
+              - { label: Card color, name: card, widget: color }
+              - { label: Font, name: font, widget: select, options: [{label: Clean sans, value: sans}, {label: Serif, value: serif}, {label: Mono, value: mono}] }
+          - label: About you
+            name: profile
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Name (Arabic), name: name_ar, widget: string, required: false }
+              - { label: Title, name: title, widget: string }
+              - { label: Title (Arabic), name: title_ar, widget: string, required: false }
+              - { label: Tagline, name: tagline, widget: string, required: false }
+              - { label: Tagline (Arabic), name: tagline_ar, widget: string, required: false }
+              - { label: Summary, name: summary, widget: text }
+              - { label: Summary (Arabic), name: summary_ar, widget: text, required: false }
+              - { label: Your photo, name: photo, widget: image, required: false }
+              - { label: Location, name: location, widget: string, required: false }
+              - { label: Location (Arabic), name: location_ar, widget: string, required: false }
+              - { label: CV file for visitors to download (PDF), name: cv, widget: file, required: false }
+              - { label: Show contact section on the page, name: show_contact, widget: boolean, default: false, hint: "Anything you type below is saved in the site's public repository and can be read there. Leave fields empty if you do not want them public." }
+              - { label: Email, name: email, widget: string, required: false }
+              - { label: Phone, name: phone, widget: string, required: false }
+              - { label: WhatsApp number (with country code), name: whatsapp, widget: string, required: false }
+              - { label: LinkedIn link, name: linkedin, widget: string, required: false }
+              - { label: GitHub profile link, name: github, widget: string, required: false }
+          - label: About page points
+            name: about
+            widget: object
+            fields:
+              - { label: Points, name: points, widget: list, field: { label: Point, name: point, widget: string } }
+              - { label: Points (Arabic), name: points_ar, widget: list, required: false, field: { label: Point, name: point, widget: string } }
+          - label: Skills (grouped, honest levels)
+            name: skills
+            widget: list
+            summary: "{{fields.group}}"
+            fields:
+              - { label: Group, name: group, widget: string }
+              - { label: Group (Arabic), name: group_ar, widget: string, required: false }
+              - label: Skills in this group
+                name: items
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: Skill, name: name, widget: string }
+                  - { label: Skill (Arabic), name: name_ar, widget: string, required: false }
+                  - { label: Details, name: detail, widget: string, required: false }
+                  - { label: Details (Arabic), name: detail_ar, widget: string, required: false }
+                  - { label: Level, name: level, widget: select, options: [{label: Core strength, value: core}, {label: Working knowledge, value: working}, {label: Still learning, value: learning}], default: working }
+          - label: Projects (drag to reorder)
+            name: projects
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Short link name (slug, English, no spaces), name: slug, widget: string, hint: "Used in the shareable project link, e.g. #p-marketing-analytics" }
+              - { label: Title, name: title, widget: string }
+              - { label: Title (Arabic), name: title_ar, widget: string, required: false }
+              - { label: Tools, name: tools, widget: string }
+              - { label: Show this project, name: visible, widget: boolean, default: true }
+              - { label: Dashboard screenshot, name: image, widget: image, required: false }
+              - { label: Link to the project, name: link, widget: string, required: false }
+              - { label: The problem, name: problem, widget: list, required: false, field: { label: Problem, name: item, widget: string } }
+              - { label: The problem (Arabic), name: problem_ar, widget: list, required: false, field: { label: Problem, name: item, widget: string } }
+              - { label: What you did, name: steps, widget: list, field: { label: Step, name: step, widget: string } }
+              - { label: What you did (Arabic), name: steps_ar, widget: list, required: false, field: { label: Step, name: step, widget: string } }
+              - { label: Results, name: results, widget: list, required: false, field: { label: Result, name: item, widget: string } }
+              - { label: Results (Arabic), name: results_ar, widget: list, required: false, field: { label: Result, name: item, widget: string } }
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Icon, name: icon, widget: select, options: [{label: Chart, value: chart}, {label: Dashboard, value: dashboard}, {label: Database, value: clean}, {label: Report, value: report}] }
+              - { label: Service, name: title, widget: string }
+              - { label: Service (Arabic), name: title_ar, widget: string, required: false }
+              - { label: Description, name: desc, widget: text }
+              - { label: Description (Arabic), name: desc_ar, widget: text, required: false }
+          - label: Experience, training and education (journey)
+            name: experience
+            widget: list
+            fields:
+              - { label: Type, name: kind, widget: select, options: [{label: Work, value: work}, {label: Teaching, value: teaching}, {label: Training, value: training}, {label: Education, value: education}, {label: Course, value: course}], default: work }
+              - { label: Title, name: role, widget: string }
+              - { label: Title (Arabic), name: role_ar, widget: string, required: false }
+              - { label: Details, name: detail, widget: string }
+              - { label: Details (Arabic), name: detail_ar, widget: string, required: false }
+          - label: Courses and certifications (journey)
+            name: courses
+            widget: list
+            fields:
+              - { label: Type, name: kind, widget: select, options: [{label: Course, value: course}, {label: Training, value: training}, {label: Education, value: education}], default: course }
+              - { label: Course, name: role, widget: string }
+              - { label: Course (Arabic), name: role_ar, widget: string, required: false }
+              - { label: Details, name: detail, widget: string }
+              - { label: Details (Arabic), name: detail_ar, widget: string, required: false }
+          - label: Certificates (add, edit, reorder)
+            name: certificates
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Certificate title, name: title, widget: string }
+              - { label: Certificate title (Arabic), name: title_ar, widget: string, required: false }
+              - { label: Issuer, name: issuer, widget: string }
+              - { label: Issuer (Arabic), name: issuer_ar, widget: string, required: false }
+              - { label: Details (dates, hours, score), name: detail, widget: string, required: false }
+              - { label: Details (Arabic), name: detail_ar, widget: string, required: false }
+              - { label: Certificate image, name: image, widget: image }
