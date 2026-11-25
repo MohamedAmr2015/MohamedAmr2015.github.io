@@ -511,3 +511,4 @@ button.chan{ background: transparent; font-family: inherit; cursor: pointer; }
 /* 320px overflow fix */
 .hero > * { min-width: 0; }
 .chan { max-width: 100%; min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 360px){ .hchannels .chan{ font-size: .78rem; padding: 10px 14px; } }
