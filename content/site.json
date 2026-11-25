@@ -369,21 +369,6 @@
         "سجّل يوم السبت أعلى متوسط مبيعات يومية (119.0 وحدة).",
         "البيانات تسجّل المبيعات فقط، بدون كميات إنتاج أو فترة صلاحية، لذلك لا يمكن أن توضح هدر المكونات أو الطزاجة."
       ]
-    },
-    {
-      "slug": "cms-test",
-      "title": "CMS test (hidden)",
-      "title_ar": "CMS test AR",
-      "tools": "Power BI",
-      "visible": false,
-      "image": "/uploads/cms-test-upload.jpg",
-      "link": "",
-      "problem": [],
-      "problem_ar": [],
-      "steps": [],
-      "steps_ar": [],
-      "results": [],
-      "results_ar": []
     }
   ],
   "services": [
