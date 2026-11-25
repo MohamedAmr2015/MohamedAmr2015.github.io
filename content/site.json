@@ -4,7 +4,7 @@
     "background": "#0a1128",
     "text": "#eaf0fc",
     "card": "#121e42",
-    "font": "sans"
+    "font": "serif"
   },
   "profile": {
     "name": "Mohamed Amr Mohamed Abdelzaher",
@@ -265,7 +265,7 @@
     },
     {
       "slug": "pharmacy-sales",
-      "title": "Pharmacy Sales Dashboard",
+      "title": "Pharmacy Sales Dashboard CMSTEST",
       "title_ar": "لوحة مبيعات الصيدلية",
       "tools": "Power BI, Power Query",
       "visible": true,
